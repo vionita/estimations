@@ -15,18 +15,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 		
 		<style>
-			red {
+
+			.reveal strong {
+				color: green;
+			}
+
+			.reveal .grey {
+				color: dimgrey;
+			}
+
+			.reveal .red {
 				color: red;	
 			}
-			
-			orange {
+
+			.reveal .orange {
 				color: orange; 	
 			}
-			
-			green {
+
+			.reveal .green {
 				color: green; 	
 			}
 		</style>
@@ -62,73 +71,52 @@
 				</section>
 				
 				<section id="attention-device">
-						<h2>The Standish Group</h2>
-						
-						<p class="fragment">
-							<span class="red">18% failed</span>
-							<span class="orange">54% late/overbudget</span>
-							<span class="green">28% ontime/onbudget</span>
-						</p>
-						
-						<p class="fragment">
-							<span class="red">18% failed</span>
-							<span class="orange">43% late/overbudget</span>
-							<span class="green">39% ontime/onbudget</span>
-						</p>
-					
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section>
+						<h2>The Chaos Report 2004</h2>
+						<div class="fragment" id="chaos2004" style="width: 100%; height: 400px;" ></div>
 					</section>
 
-				<section data-background="http://i2.wp.com/anagilemind.net/wp-content/uploads/2015/02/EstimatesTreatedAsDeadlines.jpg"
-						data-background-size="1024px">
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					<section>
+						<h2>The Chaos Report 2014</h2>
+						<div class="fragment" id="chaos2014" style="width: 100%; height: 400px;" ></div>
+					</section>
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					<blockquote cite="Robert L. Glass, Facts and Fallacies of Software Engineering">
+						&ldquo;One of the two most common causes of runaway projects is poor estimation&rdquo;
 					</blockquote>
+					<aside class="notes">
+						<p>Citation: Robert L. Glass, Facts and Fallacies of Software Engineering</p>
+						<p>The second cause is unstable requirements.</p>
+						<p>Our industry is known that, on one hand doesn’t estimate projects well </p>
+						<p>And on the other hand doesn’t use estimates appropriately NEXT</p>
+					</aside>
 				</section>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+				<section data-background="http://i2.wp.com/anagilemind.net/wp-content/uploads/2015/02/EstimatesTreatedAsDeadlines.jpg"
+						 data-background-size="1024px"
+						 data-background-transition="convex">
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<p>Why ask anyway?</p>
 					</aside>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					<h2>Benefits of Reliable Estimations</h2>
+
+					<p class="fragment">
+						better <strong>budgeting</strong>
+					</p>
+					<p class="fragment">
+						increased <strong>credibility</strong> for dev team
+					</p>
+					<p class="fragment">
+						higher <strong>quality</strong>
 					</p>
 				</section>
+
 
 			</div>
 		</div>
@@ -146,7 +134,7 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'convex', // none/fade/slide/convex/concave/zoom/slide
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -159,6 +147,15 @@
 				]
 			});
 
+		</script>
+
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>
+		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/black.js"></script>
+		<script type="text/javascript" src="js/charts.js"></script>
+		<script type="text/javascript">
+			AmCharts.makeChart("chaos2004", charts.chaos2004);
+			AmCharts.makeChart("chaos2014", charts.chaos2014);
 		</script>
 
 	</body>
