@@ -57,7 +57,6 @@
     <div class="slides">
         <section>
             <h1>The Black Art</h1>
-            <h3>Day-to-Day Practical Tips</h3>
             <p>
                 <small><a href="http://twitter.com/valentin_ionita">@valentin_ionita</a></small>
             </p>
@@ -127,7 +126,10 @@
         </section>
 
         <section>
-            <section><h2>The Bermuda Triangle</h2></section>
+            <section data-background-color="white">
+                <h2 style="color: #000000;">The <strong>Bermuda</strong> Triangle</h2>
+                <img style="box-shadow: none; border: none;" src="images/bermuda-triangle.png" alt="The Bermuda Triangle"/>
+            </section>
 
             <section>
                 <h2>Estimates</h2>
@@ -211,7 +213,6 @@
 
             <section>
                 <h2>The Story Point</h2>
-                <p class="fragment"><strong>size</strong> - <strong>complexity</strong> - <strong>risk</strong></p>
             </section>
 
             <section data-background-color="white"  data-transition="fade">
@@ -226,15 +227,138 @@
                 <h2>risk</h2>
             </section>
 
-            <section><h2>Estimate In Relative Size</h2></section>
+            <section data-background-color="white"  data-transition="fade">
+                <h2 style="color: black">Estimate In <strong>Relative</strong> Size</h2>
+                <img width="750px"  src="images/story-point-small-medium-large.png" style="box-shadow: none; border: none;" alt="Story Point Pile of Brickss"/>
+            </section>
         </section>
 
         <section>
-            <h2>Agile Estimation Techniques</h2>
+            <section>
+                <h2>Agile Estimation Techniques</h2>
+
+                <aside class="notes">
+                    <h2>INTRO - OBJECTIV</h2>
+                    <ul>
+                        <li>that quality of estimation it’s not linear with the time spent</li>
+                        <li>reduces the cost of estimates</li>
+                        <li>reduced bias</li>
+                        <li>based on collaboration / wisdom of crowds</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section data-background-color="white"  data-transition="fade" data-background-image="images/estimation-techniques-planning-poker.jpg">
+                <h2 style="color: black">Planning <strong>Poker</strong></h2>
+            </section>
+
+            <section data-background-color="white"  data-transition="fade" data-background-image="images/estimation-techniques-buckets.jpg">
+                <h2 style="color: black"><strong>Relative</strong> Mass Valuation</h2>
+            </section>
+            <section data-background-color="white"  data-transition="fade">
+                <h2 style="color: black"><strong>Relative</strong> Mass Valuation</h2>
+                <img width="750px"  src="images/estimation-techniques-relative-mass-valuation.png" style="box-shadow: none; border: none;" alt="Story Point Pile of Brickss"/>
+            </section>
+
+
         </section>
 
-        <section data-background-color="white">
-            <img src="images/no-estimates-twitter-capture.PNG" style="box-shadow: none; border: none;" alt="#NoEstimates on Twitter"/>
+        <section>
+            <section>
+                <h2>Estimation And Scaling Frameworks</h2>
+                <aside class="notes">
+                    <h3>Context And Challenges</h3>
+                    <ul>
+                        <li>Multiple teams working on the same code base</li>
+                        <li>Tens of developers, business and operations people</li>
+                    </ul>
+                    <strong>A single story point is unlikely to represent the same amount of work across teams and sprint</strong>
+                </aside>
+            </section>
+
+            <section>
+                <h2>SAFe</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Tries to *normalise* the value of a story point</li>
+                        <li>Assign 8 points for every developer/tester in the team **BASELINE**</li>
+                        <li>Find a small story that would take about 1 day (as team effort)</li>
+                        <li>Call it a 1SP and estimate each story relative to that one</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>LeSS</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Have a estimation workshop with all the team (or representatives) in order to have a **BASELINE**</li>
+                        <li>Give it a few iterations to stabilize and then forecast</li>
+                        <li>Rotate team members between teams to share knowledge and understanding</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>More Than Just a <strong>Baseline</strong></h2>
+                <aside class="notes">
+                    <ul>
+                        <li>One backlog</li>
+                        <li>One Definition of Done</li>
+                    </ul>
+                    Taking different approaches to solve the scaling challenges: one more true to agile but with some practical criticism, the other takes a hybrid approach and solves to practicality but loses fidelity of relative size estimation.
+                </aside>
+            </section>
+        </section>
+
+        <section >
+
+            <section data-background-color="white">
+                <h2 style="color: black"><strong>#No</strong>Estimates</h2>
+            </section>
+
+            <section data-background-color="white">
+                <img src="images/no-estimates-twitter-capture.PNG" style="box-shadow: none; border: none;" alt="#NoEstimates on Twitter"/>
+            </section>
+
+            <section>
+                <h2>Arguments</h2>
+                <blockquote class="fragment">
+                    &ldquo;It always takes longer than you expect, even when you take into account Hofstadter's Law.&rdquo; - Hofstadter's Law
+                </blockquote>
+                <blockquote class="fragment">
+                    &ldquo;Work expands so as to fill the time available for its completion.&rdquo; - Parkinson’s Law
+                </blockquote>
+                <p class="fragment">others ...</p>
+            </section>
+            <section>
+                <h2><strong>Accidental</strong> Complexity</h2>
+                <p class="fragment">feature cost  <span class="fragment">= essential complx.</span> <span class="fragment">+ accidental complx.</span></p>
+            </section>
+
+            <section>
+                <h2>Essential Complication</h2>
+                <p class="fragment">tax code</p>
+                <p class="fragment">landing and insurance</p>
+                <p class="fragment">cards and payments</p>
+                <h2 class="fragment"><strong>How Hard The Problem Is</strong></h2>
+            </section>
+            <section>
+                <h2>Accidental Complication</h2>
+                <p class="fragment">test environment is down</p>
+                <p class="fragment">approvals</p>
+                <p class="fragment">legacy code!</p>
+                <p class="fragment">how long the app server takes to start :D</p>
+                <h2 class="fragment"><strong>Organizational and Technical Issues</strong></h2>
+            </section>
+
+            <section>
+                <h2>Estimate</h2>
+                <div class="fragment">
+                    <p>vs</p>
+                    <h2><strong>Measure</strong> and <strong>Forecast</strong></h2>
+                </div>
+            </section>
         </section>
 
         <section>
@@ -246,9 +370,13 @@
             </p>
             <div>
                 <a style="margin-right: 10%" href="https://wwww.twitter.com/valentini">@mcconnel</a>
-                <a href="https://wwww.twitter.com/valentini">@mcconnel</a>
-                <a style="margin-left: 10%;" href="https://wwww.twitter.com/valentini">@mcconnel</a>
+                <a href="https://wwww.twitter.com/valentini">@mikewcohn</a>
+                <a style="margin-left: 10%;" href="https://wwww.twitter.com/valentini">@duarte_vasco</a>
             </div>
+        </section>
+
+        <section>
+            <h2><strong>Feedback?</strong> Questions?</h2>
         </section>
 
 
